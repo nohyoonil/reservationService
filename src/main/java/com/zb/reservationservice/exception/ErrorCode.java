@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 @Getter
 @AllArgsConstructor
 public enum ErrorCode {
+    INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "서버 내부 오류입니다"),
     ALREADY_EXISTS(HttpStatus.BAD_REQUEST, "이미 가입된 정보가 있습니다"),
     USER_NOT_EXISTS(HttpStatus.BAD_REQUEST, "유저가 존재하지 않습니다"),
     STORE_NOT_EXISTS(HttpStatus.BAD_REQUEST, "매점이 존재하지 않습니다"),
