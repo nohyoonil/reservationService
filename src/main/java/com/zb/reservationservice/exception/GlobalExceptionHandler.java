@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler
-    public ResponseEntity<?> ExceptionHandler(Exception e) {
+    public ResponseEntity<?> exceptionHandler(Exception e) {
         log.error("INTERNAL_SERVER_ERROR " + e.getMessage());
 
         ErrorCode errorCode = ErrorCode.INTERNAL_SERVER_ERROR;
